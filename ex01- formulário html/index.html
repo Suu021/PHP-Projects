@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário HTML</title>
+</head>
+
+<body>
+    <h1>Preencha o formulário para que eu possa te conhecer</h1>
+    <form method="get" action="form.php">
+        Nome: <input name="nome" type="text" />
+        <br>Ano de nascimento: <input type="number" name="ano" /><br>
+        <fieldset>
+            <legend>Gênero</legend>
+            <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-info active">
+                    <input type="radio" name="sexo" id="fem" value="mulher" autocomplete="off" checked>
+                    Feminino
+                </label>
+                <label class="btn btn-info">
+                    <input type="radio" name="sexo" id="fem" value="homem" autocomplete="off">
+                    Masculino
+                </label>
+            </div>
+        </fieldset><br>
+        <input type="submit" value="Enviar dados">
+    </form>
+</body>
+
+</html>
